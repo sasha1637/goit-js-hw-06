@@ -22,5 +22,5 @@ const images = [
 // Усі елементи галереї повинні додаватися в DOM за одну операцію додавання.
 // Додай мінімальне оформлення галереї флексбоксами або грідами через CSS класи.
 const listRef = document.querySelector('.gallery')
-const list = images.map(el => `<li class="item"> <img src="${el.url}" alt="${el.alt}" width="300px"></li>`)
+const list = images.map(el => `<li class="item"> <img src="${el.url}" alt="${el.alt}" width="300px"></li>`).join('')
 listRef.insertAdjacentHTML("afterbegin", list);
